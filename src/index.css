@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+
+/* this style is working home.tsx where we use sliding in news section  from line no: 6 to 19*/
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* 50% kyunki humne data duplicate kiya hai */
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* .animate-infinite-scroll:hover { */
+  /* animation-play-state: paused; // Mouse le jane par slider ruk jayega */
+/* } */
+
+/* this code is .testimonial-card sliding effect in home page from 23 to 46 */
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } 
+}
+
+.animate-infinite-slide {
+  display: flex;
+  width: max-content; 
+  animation: slide 30s linear infinite;
+}
+
+/* .animate-infinite-slide:hover {
+  animation-play-state: paused;
+} */
+
+.testimonial-card {
+  width: 100vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
