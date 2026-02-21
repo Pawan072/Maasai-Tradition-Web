@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import News from './pages/News';
+import Events from './pages/Events';
 import Header from './components/Header';
 
 
@@ -17,10 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/events" element={<Home />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/store" element={<Home />} />
         <Route path="/contact" element={<Home />} />
-        <Route path="/news" element={<Home />} />
+        <Route path="/news" element={<News />} />
 
         {/* Service page submenu route */}
         <Route path="/services/education" element={ <Education /> } />
