@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import News from './pages/News';
-import Events from './pages/Events';
+import Store from './pages/Store';
+import Events from './pages/Event';
 import Header from './components/Header';
 
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/events" element={<Events />} />
-        <Route path="/store" element={<Home />} />
+        <Route path="/store" element={<Store />} />
         <Route path="/contact" element={<Home />} />
         <Route path="/news" element={<News />} />
 

@@ -69,7 +69,7 @@ function Climate () {
                 </div>
             </section>
             <section>
-                <div className="grid grid-cols-2 px-10 gap-8">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 px-10 gap-8">
                   <div>
                     <h2 className="text-3xl font-medium text-[#004540] first-letter:text-red-600 pb-6">Climate Change</h2>
                     <p className="text-2xl text-[#004540]">
@@ -95,35 +95,36 @@ function Climate () {
                     className="rounded-2xl"
                   />
                 </div>
-                <div className="grid grid-cols-2 p-8 gap-8">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 p-8 gap-8">
                     <img
                         src={energy}
                         className="rounded-2xl h-full w-full"
                     />
                     <div>
-                        <h2 className="text-3xl text-[#004540] first-letter:text-red-600 font-medium pb-4">Clean Energy</h2>
-                        <p className="text-2xl text-[#004540] pb-4">
-                            Our clean energy program focuses on development
-                            of sustainable clean energy systems, improvement
-                            of energy efficiency and increase access to
-                            affordable, reliable and modern energy services.
-                        </p>
-                        <h2 className="text-3xl text-[#004540] font-medium">Renewable Energy Technologies we cover are;</h2>
-                        <div className="m-4">
-                            <li className="text-2xl text-[#004540] p-6">
-                                <ul className="p-1">Biogas energy (household and institutional level)</ul>
-                                <ul className="p-1">Improved cooking stoves</ul>
-                                <ul className="p-1">Solar PV & solar thermal</ul>
-                                <ul className="p-1">Waste to energy</ul>
-                                <ul className="p-1">Biomass power generation</ul>
-                                <ul className="p-1">Biofuel</ul>
-                            </li>
-                        </div>
+                      <h2 className="text-3xl text-[#004540] first-letter:text-red-600 font-medium pb-4">
+                        Clean Energy
+                      </h2>
+                      <p className="text-2xl text-[#004540] pb-4">
+                        Our clean energy program focuses on development of sustainable clean energy systems, 
+                        improvement of energy efficiency and increase access to affordable, reliable and modern 
+                        energy services.
+                      </p>
+                      <h2 className="text-3xl text-[#004540] font-medium pb-4">
+                        Renewable Energy Technologies we cover are:
+                      </h2>
+                      <ul className="list-disc list-inside space-y-2 text-2xl text-[#004540] ml-4">
+                        <li>Biogas energy (household and institutional level)</li>
+                        <li>Improved cooking stoves</li>
+                        <li>Solar PV & solar thermal</li>
+                        <li>Waste to energy</li>
+                        <li>Biomass power generation</li>
+                        <li>Biofuel</li>
+                      </ul>
                     </div>
                 </div>
             </section>
             <section className="bg-[#004540] py-8">
-                <div className="grid grid-cols-2 px-6 gap-6">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 px-6 gap-6">
                     <div>
                         <h2 className="text-3xl text-[#fffa81] first-letter:text-red-600 font-medium">Green Growth</h2>
                         <p className="text-2xl text-[#fffa81] py-4">
@@ -136,27 +137,27 @@ function Climate () {
                             world.
                         </p>
                         <div className="p-8">
-                            <li className="text-2xl text-[#fffa81]">
-                                <ul className="py-2">
+                            <ul className="list-disc list-inside space-y-2 text-2xl text-[#fffa81] ml-4">
+                                <li>
                                     A ssisting on formulation and implementation of
                                     appropriate plans, policies, strategies,
                                     regulations, and incentives.
-                                </ul>
-                                <ul className="py-2">
+                                </li>
+                                <li>
                                     Promoting sustainable production and
                                     consumption practices.
-                                </ul>
-                                <ul className="py-2">
+                                </li>
+                                <li>
                                     Assisting on fair distribution of income and social
                                     standards to enhance poverty reduction, social
                                     well being, better livelihood, inclusive and
                                     accountable society.
-                                </ul>
-                                <ul className="py-2">
+                                </li>
+                                <li>
                                     Providing necessary training and education to the
                                     concerned parties.
-                                </ul>
-                            </li>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <img
@@ -166,7 +167,7 @@ function Climate () {
                 </div>
             </section>
             <section className="py-10">
-                <div className="grid grid-cols-2 gap-6 px-10">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-6 px-10">
                     <img
                         src={water}
                         className="rounded-2xl h-full w-full"
@@ -207,7 +208,7 @@ function Climate () {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-10 p-10 py-20">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-10 p-10 py-20">
                     <div className="py-4">
                         <h2 className="text-3xl font-medium text-[#004540] first-letter:text-red-600">
                             Forest Restoration

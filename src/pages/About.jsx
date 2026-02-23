@@ -64,9 +64,9 @@ function About () {
           <h2 className="text-4xl font-medium text-[#004540] first-letter:text-red-600">OUR MISSION</h2>
           <div className="mt-4 w-1/5 h-1.5 md:h-1 bg-red-600 mx-auto"/>
         </div>
-        <div className="grid grid-cols-2 py-5 gap-4">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 py-5 gap-4">
           <div>
-            <p className="text-2xl text-[#004540] font-medium">
+            <p className="text-2xl text-[#004540] font-medium px-6">
               We empower culture through CITY SHUKA
               CAMPAIGN, our organization is dedicated
               to sharing and preserving the vibrant
@@ -86,7 +86,7 @@ function About () {
             </p>
           </div>
           <img 
-            className="rounded-2xl"
+            className="rounded-2xl md:mx-auto"
             src={mission}
           />
         </div>
@@ -150,19 +150,19 @@ function About () {
         </div>
       </section>
       {/* Jairus Kinyanjui */}
-      <section className="lg:py-20">
+      <section className="lg:py-20 py-10">
         <div className="flex pb-20">
           {/* decoratiove div */}
           <div className="mt-4 w-1/5 h-1.5 md:h-1 bg-red-600 mx-auto"/>
           <h2 className="text-5xl font-medium text-[#004540] first-letter:text-red-600">Jairus Kinyanjui</h2>
           <div className="mt-4 w-1/5 h-1.5 md:h-1 bg-red-600 mx-auto"/>
         </div>
-        <div className="lg:px-18">
-          <p className="text-2xl font-medium text-[#004540]">
+        <div className="px-4 md:px-10 lg:px-24"> 
+          <p className="text-lg md:text-xl lg:text-2xl font-medium text-[#004540] leading-relaxed text-justify md:text-left">
             City Shuka Was founded in Nairobi, Kenya, by filmmaker and youth advocate jairus
             kinyanjui with the vision of creating safe spaces where young people can discover
             thier talents and build meaningful futures. The organization began as a small
-            community initiative focused on using filmmaking and photography as tools for selfexpression, 
+            community initiative focused on using filmmaking and photography as tools for self-expression, 
             education, and social change. Over time, Tuvuli expanded its programs to
             address broader youth chalenges including mental health awarness, gender
             equality, climate advocacy, and creative skills developement. Through initiatives such

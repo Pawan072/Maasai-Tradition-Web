@@ -297,13 +297,8 @@ function Home() {
                 alt="Nomadic Women"
                 className='rounded-3xl shadow-lg w-full object-cover aspect-[4/5]'
               />
-              {/* <div className="absolute -bottom-4 -left-4 -z-10 text-emerald-800 opacity-40">
-                <div className="grid grid-cols-12 gap-2">
-                  {[...Array(300)].map((_, i) => <div key={i} className="w-2 h-2 bg-current rounded-full"></div>)}
-                </div>
-              </div> */}
             </div>
-            <div className="absolute -bottom-10 right-10 w-1/2 z-20">
+            <div className="absolute lg:-bottom-10 md:bottom-10 sm:top-30 right-10 w-1/2 z-20">
               <img 
                 src={home2}
                 alt="Nomadic Dance"
@@ -356,7 +351,7 @@ function Home() {
                 <span className='text-4xl md:text-7xl text-[#fffa81]'><span className="text-red-600">H</span>eartbeat</span>
               </div>
               {/* Row 2 */}
-              <div className='flex flex-wrap gap-4 p-2'>
+              <div className='flex flex-wrap gap-4 p-2 justify-center'>
                 <span className='text-4xl md:text-7xl text-[#fffa81]'>of</span>
                 <span className='text-4xl md:text-7xl text-[#fffa81]'><span className="text-red-600">T</span>radition</span>
               </div>
@@ -472,23 +467,25 @@ function Home() {
 
       {/* Feature Of Shuka */}
 
-      <section className='py-8'>
-        <div className="pb-24">
-          <h2 className="text-2xl text-center border-b-4 font-semibold border-red-500 w-fit mx-auto">
+      <section className='py-8 sm:px-6'>
+        <div className="pb-16 md:pb-24">
+          <h2 className="text-xl md:text-2xl text-center border-b-4 font-semibold border-red-500 w-fit mx-auto">
             Features of Shuka
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:px-28 pt-12">
+          {/* Added px-4 for mobile so cards don't touch the screen edges */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 px-4 md:px-10 lg:px-28 pt-8 md:pt-12">
             {features.map((feature, index) => (
-              <div key={index} className="max-w-xl">
-              
+              <div key={index} className="max-w-xl mx-auto md:mx-0">
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className="h-80 w-full object-cover object-top rounded-t-3xl"
+                  /* Image height is smaller on mobile (h-60) and grows to h-80 on tablets/laptops */
+                  className="h-60 sm:h-72 md:h-80 w-full object-cover object-top rounded-t-3xl shadow-md"
                 />
 
-                <h3 className="text-3xl font-bold mt-6 tracking-wide">
+                {/* Font size is text-2xl on mobile and text-3xl on larger screens */}
+                <h3 className="text-2xl md:text-3xl font-bold mt-4 md:mt-6 tracking-wide">
                   <span className="text-red-600">
                     {feature.title.charAt(0)}
                   </span>
@@ -496,8 +493,8 @@ function Home() {
                     {feature.title.slice(1)}
                   </span>
                 </h3>
-            
-                <p className="text-[#004540] text-lg mt-4 leading-relaxed">
+
+                <p className="text-[#004540] text-base md:text-lg mt-3 md:mt-4 leading-relaxed opacity-90">
                   {feature.description}
                 </p>
               </div>
@@ -556,7 +553,7 @@ function Home() {
         <h2 className="text-2xl text-center border-b-4 font-semibold border-red-500 w-fit mx-auto mb-16">
           New Arrival
         </h2>
-        <div className='grid grid-cols-4 mx-12 gap-2'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:px-12 md:px-10 sm:px-6 gap-2'>
           {arrivals.map((arrival, index) => (
 
             <div key={index} className='m-4 bg-gray-300 rounded-2xl flex flex-col overflow-hidden'>
@@ -600,7 +597,7 @@ function Home() {
         <h2 className="text-2xl text-center border-b-4 font-semibold border-red-500 w-fit mx-auto mb-16">
           Events
         </h2>
-        <div className='grid grid-cols-4 px-10'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-1 sm:grid-cols-1 lg:px-10 md:px-6 sm:px-4'>
           {events.map((event, index)=>(
             <div className='bg-gray-200 m-2 rounded-xl'>
               <img
@@ -651,7 +648,7 @@ function Home() {
               Testimonals
             </h2>
 
-            <div className="overflow-hidden max-w-2xl relative">
+            <div className="overflow-hidden max-w-2xl relative md:pt-6">
               {/* Scrolling Wrapper */}
               <div className="animate-infinite-slide">
                 {[...testimonals, ...testimonals].map((testimonal, index) => (
@@ -686,7 +683,7 @@ function Home() {
           <h2 className="text-2xl text-center border-b-4 font-semibold border-red-600 w-fit mx-auto mb-16">
             Supporters
           </h2>
-          <div className='grid grid-cols-2 gap-8'>
+          <div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-8'>
             {supporters.map((supporter, index) => (
               <div key={index} className='flex flex-col items-center text-center'>
                 <img

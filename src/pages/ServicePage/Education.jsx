@@ -103,7 +103,7 @@ function Education (){
                   <div className="mt-4 w-1/8 h-1.5 md:h-1 bg-red-600 mx-auto"/>
                 </div>
 
-                <div className='grid grid-cols-2 px-18'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-1 px-10'>
                     <div className='px-6'>
                       <h3 className='text-2xl font-medium first-letter:text-red-600 text-[#004540]'>
                           Access to quality education is a major challenge
@@ -141,14 +141,14 @@ function Education (){
                     <div className='px-8'>
                         <img
                             src={mandela}
-                            className='rounded-2xl h-full w-auto'
+                            className='rounded-2xl h-full w-full'
                         />
                     </div>
                 </div>
                 
                 {/* Card section */}
 
-                <div className='grid grid-cols-3 gap-4 px-16 py-10'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-4 px-16 py-10'>
                     {facilities.map((facilitie, index)=>(
                         <div
                           className="relative w-full h-70 flex flex-col overflow-hidden rounded-2xl bg-[#004540]/20"

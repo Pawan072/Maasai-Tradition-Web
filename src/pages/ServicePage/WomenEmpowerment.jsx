@@ -102,7 +102,7 @@ function Empowerment (){
           <h2 className="text-4xl font-medium text-[#004540] first-letter:text-red-600">Kofi Annan</h2>
           <div className="mt-4 w-1/8 h-1.5 md:h-1 bg-red-600 mx-auto"/>
         </div>
-        <div className="grid grid-cols-2 gap-6 px-10">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-6 px-10">
           <div className="">
             <h2 className="text-3xl font-medium text-[#004540] first-letter:text-red-600">
               City Shuka, supports the Maasai to diversify
@@ -144,7 +144,7 @@ function Empowerment (){
         </div>
       </section>
       <section className="pb-10">
-        <div className="grid grid-cols-3 gap-4 px-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2  gap-4 px-10">
           {empowerments.map((empowerment, index)=>(
             <div>
               <div

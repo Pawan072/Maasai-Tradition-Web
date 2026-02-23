@@ -28,7 +28,7 @@
 .animate-infinite-slide {
   display: flex;
   width: max-content; 
-  animation: slide 30s linear infinite;
+  animation: slide 90s linear infinite;
 }
 
 /* .animate-infinite-slide:hover {

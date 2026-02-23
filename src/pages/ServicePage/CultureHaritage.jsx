@@ -76,7 +76,7 @@ function CultureHaritage(){
                   <div className="mt-4 w-1/8 h-1.5 md:h-1 bg-red-600 mx-auto"/>
                 </div>
 
-                <div className="grid grid-cols-2 max-w-8xl gap-2 px-10">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 max-w-8xl gap-2 px-10">
                     <div>
                         <p className="text-3xl font-medium text-[#004540] py-10">
                             Maasai people represent one of the most
@@ -99,7 +99,7 @@ function CultureHaritage(){
 
 
             <section className="py-20">
-                <div className="grid grid-cols-2 px-10 gap-4">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 px-10 gap-4">
                     <div className="bg-[#004540] drop-shadow-2xl rounded-2xl shadow-[#004540]">
                         <h2 className="text-4xl font-bold first-letter:text-red-600 text-[#fffa81] p-6">Social Structure and the Roles of Men and Women</h2>
                         <p className="text-2xl text-[#fffa81] p-6">
@@ -170,7 +170,7 @@ function CultureHaritage(){
 
 
             <section className="pt-20">
-                <div className="grid grid-cols-2 px-10 gap-6">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 px-10 gap-6">
                     <div>
                         <h2 className="text-4xl font-bold text-[#004540] first-letter:text-red-600 pb-10">Beliefs and Spirituality</h2>
                         <p className="text-3xl font-semibold text-[#004540] ">
@@ -194,10 +194,10 @@ function CultureHaritage(){
                         className="w-full rounded-2xl h-150"
                     />
                 </div>
-                <div className="grid grid-cols-2 px-10 gap-6 pt-16">
+                <div className="grid lg:grid-cols-2 md:grid-cols-1 px-10 gap-6 pt-16">
                     <img
                         src={womenGroup}
-                        className="rounded-2xl h-full"
+                        className="rounded-2xl h-full w-full"
                     />
                     <div className="bg-[#004540] p-6 rounded-2xl">
                         <h2 className="text-4xl first-letter:text-red-600 font-medium text-[#fffa81]">Traditional Rites and Ceremonies</h2>
@@ -241,11 +241,11 @@ function CultureHaritage(){
 
 
             <section>
-                <div className="bg-[#004540] px-20 pb-10">
+                <div className="bg-[#004540] lg:px-20 px-10 pb-10">
                     <h2 className="text-4xl text-[#fffa81] first-letter:text-red-600 text-center font-bold py-4">
                         Dance and Music
                     </h2>
-                    <p className="text-2xl font-medium text-[#fffa81]">
+                    <p className="text-2xl sm:text-xl font-medium text-[#fffa81]">
                         Dance and music play a significant role in Maasai culture, used not only for entertainment
                         but also as a medium for storytelling, education, and spiritual expression. The Maasai have
                         distinct forms of dance, such as the jumping dance (adumu) performed by moran as a
@@ -253,7 +253,7 @@ function CultureHaritage(){
                         as possible in a circle, with each jump symbolizing power and vitality.
                     </p>
                 </div>
-                <div className="grid grid-cols-3 gap-6 lg:p-20">
+                <div className="grid md:grid-cols-3 p-10 gap-6 lg:p-20 md:p-10">
                     <div className="relative overflow-hidden rounded-2xl group">
                       <div className="absolute inset-0 bg-gray-600 opacity-70 mix-blend-multiply pointer-events-none z-10"></div>
 

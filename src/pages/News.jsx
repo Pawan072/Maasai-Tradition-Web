@@ -39,7 +39,7 @@ function News (){
                     </div>
                 </div>
             </section>
-            <section className="py-10">
+            <section className="pt-10">
                 {/* first press */}
                 <div>
                     <div className="relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12 flex flex-col h-full">
