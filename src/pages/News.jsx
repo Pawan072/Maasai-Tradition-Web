@@ -50,7 +50,7 @@ function News (){
                           </h3>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 p-10 gap-8">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-1 p-10 gap-8">
                         <div>
                             <h2 className="text-4xl font-bold first-letter:text-red-600 text-[#004540]">The Ongoing Struggle for ancestral Land Rights</h2>
                             <p className="text-2xl font-medium py-10 text-[#004540]">
@@ -66,7 +66,7 @@ function News (){
                         </div>
                         <img
                             src={first}
-                            className="rounded-2xl"
+                            className="rounded-2xl w-full"
                         />
                     </div>
                 </div>
@@ -80,10 +80,10 @@ function News (){
                           </h3>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 p-10 gap-8">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-1 p-10 gap-8">
                         <img
                             src={second}
-                            className="rounded-2xl"
+                            className="rounded-2xl w-full"
                         />
                         <div>
                             <h2 className="text-4xl font-bold first-letter:text-red-600 text-[#004540]">Climate Resilience: Adapting Traditional Herding</h2>
@@ -108,7 +108,7 @@ function News (){
                           </h3>
                         </div>
                     </div>
-                    <div className="grid grid-cols-2 p-10 gap-8">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-1 p-10 gap-8">
                         <div>
                             <h2 className="text-4xl font-bold first-letter:text-red-600 text-[#004540]">Global Recognition for Maasai Handicrafts</h2>
                             <p className="text-2xl font-medium py-10 text-[#004540]">
