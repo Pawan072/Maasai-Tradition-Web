@@ -44,7 +44,7 @@ export default function Header() {
               </Link>
     
               {/* Desktop Menu */}
-              <nav className="hidden md:flex items-center gap-2">
+              <nav className="hidden lg:flex items-center gap-2">
                 {links.map((item) => (
                   <div key={item.path} className="relative group py-5"> {/* 'group' class for hover */}
                     <Link
@@ -77,20 +77,20 @@ export default function Header() {
               {/* Sign Up */}
               <Link
                 to="/signup"
-                className="hidden md:block bg-[#fffa81] text-black font-bold px-6 py-2.5 rounded-full shadow-md hover:scale-105 transition"
+                className="hidden lg:block bg-[#fffa81] text-black font-bold px-6 py-2.5 rounded-full shadow-md hover:scale-105 transition"
               >
                 Sign Up
               </Link>
             
               {/* Mobile Button */}
-              <button onClick={() => setOpen(!open)} className="md:hidden text-white">
+              <button onClick={() => setOpen(!open)} className="lg:hidden text-white">
                 {open ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
         </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden bg-white shadow-lg transition-all duration-300 overflow-y-auto ${open ? "max-h-[80vh]" : "max-h-0"}`}>
+      <div className={`lg:hidden bg-white shadow-lg transition-all duration-300 overflow-y-auto ${open ? "max-h-[80vh]" : "max-h-0"}`}>
         <nav className="flex flex-col p-4">
           {links.map((item) => (
             <div key={item.path}>
