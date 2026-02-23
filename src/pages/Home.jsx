@@ -580,7 +580,7 @@ function Home() {
               <div className="pb-2 flex justify-center">
                 <Link 
                   // to=''
-                  className='bg-[#004540] text-[#fffa81] py-3 px-8 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 w-full md:w-auto'
+                  className='bg-[#004540] text-[#fffa81] py-3 px-8 rounded-xl font-bold transition-transform hover:scale-105 active:scale-95 w-fit md:w-auto'
                 >
                   Buy Now
                 </Link>

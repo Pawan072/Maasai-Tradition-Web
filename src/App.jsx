@@ -4,6 +4,7 @@ import About from './pages/About';
 import News from './pages/News';
 import Store from './pages/Store';
 import Events from './pages/Event';
+import Contact from './pages/Contact';
 import Header from './components/Header';
 
 
@@ -22,7 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/events" element={<Events />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/contact" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
 
         {/* Service page submenu route */}
